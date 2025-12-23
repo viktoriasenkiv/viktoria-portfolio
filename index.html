@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viktoria Senkiv | QA Automation Engineer</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+  }
+
+  a { color: red; text-decoration: none; transition: 0.3s;}
+  a:hover { color: darkred; text-decoration: underline;}
+
+  /* HERO */
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 40px 20px; /* Reduced bottom padding */
+  }
+  .hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid red;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .hero-img:hover {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: 0 0 20px red;
+  }
+  #hero h1 { color: red; font-size: 2.8rem; margin: 10px 0; }
+  #hero h2 { color: #fff; margin: 5px 0; }
+  #hero p { color: #fff; margin: 5px 0 20px; }
+
+  /* SECTIONS */
+  section {
+    padding: 20px 10px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: red;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  /* CARDS */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  }
+  .card:hover {
+    background: #222;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 20px red;
+  }
+
+  .card h3 {
+    color: red;
+    margin-bottom: 10px;
+  }
+  .card p, .card li {
+    color: #fff;
+    font-size: 0.95rem;
+  }
+
+  .skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* slight bigger gap for 4 per row */
+  justify-content: center; /* center all rows */
+}
+.skills-list li {
+  border: 1px solid red;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  cursor: default;
+  width: 22%; /* ensures 4 items per row */
+  text-align: center;
+  box-sizing: border-box;
+}
+.skills-list li:hover {
+  background: red;
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+  /* RESPONSIVE */
+  @media(max-width:768px){
+    .card-container { flex-direction: column; align-items: center; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section id="hero">
+    <img src="profile.jpg" alt="Viktoria Senkiv" class="hero-img">
+    <h1>Viktoria Senkiv</h1>
+    <h2>QA Automation Engineer</h2>
+    <p>(Playwright | JavaScript | Cypress)</p>
+    <!-- About Me line -->
+    <p style="color:#fff; font-size:1.1rem; max-width:600px; margin-top:5px; line-height:2.5;">
+      Detail-oriented QA Automation Engineer with 4+ years of experience testing web and mobile applications in Agile teams. Skilled in building scalable Playwright and Cypress frameworks, integrating CI/CD pipelines via GitHub Actions, and executing functional, regression, and end-to-end testing.
+    </p>
+  </section>
+  
+<!-- EXPERIENCE -->
+<section id="experience" style="padding-top:10px;"> <!-- Reduced top padding to bring closer -->
+  <h2>Experience</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Sportendo – QA Automation Engineer</h3>
+      <p>Designed and executed automated UI tests using Cypress and API tests via Postman, increasing test coverage and reducing manual regression time by 60%. Built and maintained 100+ automated tests and CI/CD pipelines.</p>
+    </div>
+    <div class="card">
+      <h3>Reali – QA Engineer</h3>
+      <p>Executed manual and Playwright-based automated tests, led API testing efforts using Postman & Swagger, validated SQL databases, and built Playwright test suites reducing manual QA workload by 40%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>Playwright</li>
+    <li>Cypress</li>
+    <li>JavaScript</li>
+    <li>TypeScript basics</li>
+    <li>Postman</li>
+    <li>Swagger</li>
+    <li>MySQL</li>
+    <li>Adminer</li>
+    <li>Git & GitHub Actions</li>
+    <li>Jira & Zephyr</li>
+    <li>Agile / Scrum</li>
+  </ul>
+</section>
+
+<!-- COMMUNITY -->
+<section id="community">
+  <h2>Community & Leadership</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>US Air Force Reserve – Staff Sergeant</h3>
+      <p>Lead and mentor teams, ensuring operational readiness.</p>
+    </div>
+    <div class="card">
+      <h3>Non-Profit “New Wave”</h3>
+      <p>Board of Directors – strategic guidance for cultural and social initiatives.</p>
+    </div>
+    <div class="card">
+      <h3>Ukrainian National Women’s League of America</h3>
+      <p>Advocacy projects supporting Ukrainian-American community engagement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages">
+  <h2>Languages</h2>
+  <div class="card-container">
+    <div class="card"><p>English: Fluent</p></div>
+    <div class="card"><p>Ukrainian: Native</p></div>
+    <div class="card"><p>Polish: Intermediate</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card-container">
+    <div class="card"><p>Email: viktoria.senkiv.qa@gmail.com</p></div>
+    <div class="card"><p>LinkedIn: <a href="https://linkedin.com/in/viktoriasenkiv" target="_blank">linkedin.com/in/viktoriasenkiv</a></p></div>
+    <div class="card"><p>GitHub: <a href="https://github.com/viktoriasenkiv" target="_blank">github.com/viktoriasenkiv</a></p></div>
+  </div>
+</section>
+
+</body>
+</html>
